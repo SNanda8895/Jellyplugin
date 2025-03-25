@@ -1,0 +1,2 @@
+_extends: .github
+tag-template: jelly-$NEXT_MINOR_VERSION
