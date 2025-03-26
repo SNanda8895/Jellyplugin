@@ -1,15 +1,13 @@
 <?jelly escape-by-default='true'?>
 <j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define"
          xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
-
-    <!-- Default Escaped Input -->
     <f:entry title="${%Name}" field="name">
         <f:textbox />
     </f:entry>
     <p>Escaped Input: "${instance.name}"</p>
 
-    <!-- Explicitly Unescaped Section -->
     <?jelly escape-by-default='false'?>
     <p>Unescaped Input: "${instance.name}"</p>
 
 </j:jelly>
+<!--  xss warning-->
